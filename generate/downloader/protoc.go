@@ -14,7 +14,6 @@ import (
 
 	"github.com/gunk/gunk/log"
 	"github.com/rogpeppe/go-internal/lockedfile"
-	"golang.org/x/sys/unix"
 )
 
 const defaultProtocVersion = "v3.9.1"
@@ -54,7 +53,8 @@ func CheckOrDownloadProtoc(path, version string) (string, error) {
 		dstPath = filepath.Join(cacheDir, fmt.Sprintf("protoc-%s", version))
 	}
 	dstDir, _ := filepath.Split(dstPath)
-	if unix.Access(dstDir, unix.W_OK) != nil {
+	_, err := os.OpenFile(dstDir, os.O_RDWR, 0)
+	if err != nil {
 		// we use unwritable dstPath (system protoc),
 		// let's not do any of the locking/downloading and just test it
 		if err := verifyProtocBinary(dstPath, version); err != nil {
@@ -62,6 +62,7 @@ func CheckOrDownloadProtoc(path, version string) (string, error) {
 		}
 		return dstPath, nil
 	}
+
 	// First, grab a lock separate from the destination file. The
 	// destination file is a binary we'll want to execute, so using it
 	// directly as the lock can lead to "text file busy" errors.
@@ -170,13 +171,13 @@ func verifyProtocBinary(path, version string) error {
 //
 // Supported os + arch variants:
 //
-// 	osx-x86_32
-// 	osx-x86_64
-// 	linux-x86_32
-// 	linux-x86_64
-// 	linux-aarch64
-// 	win32
-// 	win64
+//	osx-x86_32
+//	osx-x86_64
+//	linux-x86_32
+//	linux-x86_64
+//	linux-aarch64
+//	win32
+//	win64
 //
 // Example: https://github.com/protocolbuffers/protobuf/releases/download/v3.9.1/protoc-3.9.1-linux-x86_64.zip
 func protocDownloadURL(os, arch, version string) (string, error) {
