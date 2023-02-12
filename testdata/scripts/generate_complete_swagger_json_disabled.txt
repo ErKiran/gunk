@@ -17,12 +17,12 @@ plugin_version=v2.3.0
     "version": "1.0",
     "contact": {
       "name": "gunk",
-      "url": "https://github.com/gunk/gunk",
+      "url": "https://github.com/ErKiran/gunk",
       "email": "none@example.com"
     },
     "license": {
       "name": "MIT License",
-      "url": "https://github.com/gunk/gunk/blob/master/LICENSE"
+      "url": "https://github.com/ErKiran/gunk/blob/master/LICENSE"
     }
   },
   "tags": [
@@ -77,7 +77,7 @@ plugin_version=v2.3.0
               "title": "my title",
               "externalDocs": {
                 "description": "More about gunk 418",
-                "url": "https://github.com/gunk/gunk"
+                "url": "https://github.com/ErKiran/gunk"
               },
               "multipleOf": 2,
               "maximum": 10,
@@ -200,7 +200,7 @@ plugin_version=v2.3.0
   ],
   "externalDocs": {
     "description": "More about gunk",
-    "url": "https://github.com/gunk/gunk"
+    "url": "https://github.com/ErKiran/gunk"
   }
 }
 -- echo.gunk --
@@ -211,12 +211,12 @@ plugin_version=v2.3.0
 //                 Description: "this is a description",
 //                 Contact: openapiv2.Contact{
 //                         Name:   "gunk",
-//                         URL:    "https://github.com/gunk/gunk",
+//                         URL:    "https://github.com/ErKiran/gunk",
 //                         Email:  "none@example.com",
 //                 },
 //                 License: openapiv2.License{
 //                         Name:   "MIT License",
-//                         URL:    "https://github.com/gunk/gunk/blob/master/LICENSE",
+//                         URL:    "https://github.com/ErKiran/gunk/blob/master/LICENSE",
 //                 },
 //                 Version: "1.0",
 //         },
@@ -284,7 +284,7 @@ plugin_version=v2.3.0
 //                                 ReadOnly:      true,
 //                                 ExternalDocs: openapiv2.ExternalDocumentation{
 //                                         Description: "More about gunk 418",
-//                                         URL:         "https://github.com/gunk/gunk",
+//                                         URL:         "https://github.com/ErKiran/gunk",
 //                                 },
 //                         },
 //                 },
@@ -328,7 +328,7 @@ plugin_version=v2.3.0
 //         },
 //         ExternalDocs: openapiv2.ExternalDocumentation{
 //                 Description: "More about gunk",
-//                 URL:         "https://github.com/gunk/gunk",
+//                 URL:         "https://github.com/ErKiran/gunk",
 //         },
 // }
 package test

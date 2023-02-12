@@ -9,13 +9,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gunk/gunk/log"
+	"github.com/ErKiran/gunk/log"
 )
 
-type Ts struct{
-	ID string;
-	ModuleName string;
-	BinaryName string;
+type Ts struct {
+	ID         string
+	ModuleName string
+	BinaryName string
 }
 
 func (g Ts) Name() string {
@@ -37,7 +37,7 @@ func (g Ts) Download(version string, p Paths) (string, error) {
 		all := "npm init -y"
 		return "", log.ExecError(all, err)
 	}
-	npmCmd = log.ExecCommand("npm", "install", g.ModuleName + "@" + version)
+	npmCmd = log.ExecCommand("npm", "install", g.ModuleName+"@"+version)
 	npmCmd.Dir = p.buildDir
 	err = npmCmd.Run()
 	if err != nil {
@@ -51,12 +51,12 @@ func (g Ts) Download(version string, p Paths) (string, error) {
 	}
 	protocJSONBytes, err := ioutil.ReadFile(filepath.Join(p.buildDir, "node_modules", g.ModuleName, "package.json"))
 	if err != nil {
-		return "", fmt.Errorf("cannot read " + g.ModuleName + " package.json: %w", err)
+		return "", fmt.Errorf("cannot read "+g.ModuleName+" package.json: %w", err)
 	}
 	var protocJSON packageJSON
 	err = json.Unmarshal(protocJSONBytes, &protocJSON)
 	if err != nil {
-		return "", fmt.Errorf("cannot parse " + g.ModuleName + " package.json: %w", err)
+		return "", fmt.Errorf("cannot parse "+g.ModuleName+" package.json: %w", err)
 	}
 	for k, v := range protocJSON.Dependencies {
 		if strings.HasPrefix(v, "^") {

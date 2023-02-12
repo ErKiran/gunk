@@ -1,4 +1,4 @@
-module github.com/gunk/gunk
+module github.com/ErKiran/gunk
 
 go 1.19
 

@@ -19,16 +19,16 @@ option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
 		description: "this is a description"
 		contact: {
 			name: "gunk";
-			url: "https://github.com/gunk/gunk";
+			url: "https://github.com/ErKiran/gunk";
 			email: "none@example.com";
 		};
 		license: {
 			name: "MIT License";
-			url: "https://github.com/gunk/gunk/blob/master/LICENSE";
+			url: "https://github.com/ErKiran/gunk/blob/master/LICENSE";
 		};
 	};
   external_docs: {
-		url: "https://github.com/gunk/gunk";
+		url: "https://github.com/ErKiran/gunk";
 		description: "More about gunk";
 	}
   schemes: HTTP;
@@ -83,7 +83,7 @@ option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
 				discriminator: "it's a discriminator",
 				read_only:true,
 				external_docs: {
-					url: "https://github.com/gunk/gunk";
+					url: "https://github.com/ErKiran/gunk";
 					description: "More about gunk 418";
 				},
 			}
@@ -164,12 +164,12 @@ service Service {
 //                 Description: "this is a description",
 //                 Contact: openapiv2.Contact{
 //                         Name:   "gunk",
-//                         URL:    "https://github.com/gunk/gunk",
+//                         URL:    "https://github.com/ErKiran/gunk",
 //                         Email:  "none@example.com",
 //                 },
 //                 License: openapiv2.License{
 //                         Name:   "MIT License",
-//                         URL:    "https://github.com/gunk/gunk/blob/master/LICENSE",
+//                         URL:    "https://github.com/ErKiran/gunk/blob/master/LICENSE",
 //                 },
 //                 Version: "1.0",
 //         },
@@ -237,7 +237,7 @@ service Service {
 //                                 ReadOnly:      true,
 //                                 ExternalDocs: openapiv2.ExternalDocumentation{
 //                                         Description: "More about gunk 418",
-//                                         URL:         "https://github.com/gunk/gunk",
+//                                         URL:         "https://github.com/ErKiran/gunk",
 //                                 },
 //                         },
 //                 },
@@ -281,7 +281,7 @@ service Service {
 //         },
 //         ExternalDocs: openapiv2.ExternalDocumentation{
 //                 Description: "More about gunk",
-//                 URL:         "https://github.com/gunk/gunk",
+//                 URL:         "https://github.com/ErKiran/gunk",
 //         },
 // }
 package test

@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gunk/gunk/log"
+	"github.com/ErKiran/gunk/log"
 	"github.com/rogpeppe/go-internal/lockedfile"
 )
 

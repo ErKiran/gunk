@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gunk/gunk/convert"
-	"github.com/gunk/gunk/dump"
-	"github.com/gunk/gunk/format"
-	"github.com/gunk/gunk/generate"
-	"github.com/gunk/gunk/generate/downloader"
-	"github.com/gunk/gunk/lint"
-	"github.com/gunk/gunk/log"
-	"github.com/gunk/gunk/vetconfig"
+	"github.com/ErKiran/gunk/convert"
+	"github.com/ErKiran/gunk/dump"
+	"github.com/ErKiran/gunk/format"
+	"github.com/ErKiran/gunk/generate"
+	"github.com/ErKiran/gunk/generate/downloader"
+	"github.com/ErKiran/gunk/lint"
+	"github.com/ErKiran/gunk/log"
+	"github.com/ErKiran/gunk/vetconfig"
 	"github.com/spf13/cobra"
 )
 

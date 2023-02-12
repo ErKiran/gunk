@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gunk/gunk/log"
+	"github.com/ErKiran/gunk/log"
 	"github.com/rogpeppe/go-internal/lockedfile"
 )
 
@@ -71,10 +71,10 @@ var ds = []Downloader{
 	Swift{},
 	GrpcSwift{},
 	GrpcPython{},
-	//use npm ts-protoc-gen package
-	Ts{ID: "ts", ModuleName: "ts-protoc-gen", BinaryName : "protoc-gen-ts"},
-	//use npm ts-proto package
-	Ts{ID: "ts_proto", ModuleName: "ts-proto", BinaryName : "protoc-gen-ts_proto"},
+	// use npm ts-protoc-gen package
+	Ts{ID: "ts", ModuleName: "ts-protoc-gen", BinaryName: "protoc-gen-ts"},
+	// use npm ts-proto package
+	Ts{ID: "ts_proto", ModuleName: "ts-proto", BinaryName: "protoc-gen-ts_proto"},
 	GrpcGo{},
 }
 

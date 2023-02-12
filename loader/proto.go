@@ -11,8 +11,8 @@ import (
 	"text/scanner"
 	"unicode"
 
+	"github.com/ErKiran/gunk/reflectutil"
 	"github.com/emicklei/proto"
-	"github.com/gunk/gunk/reflectutil"
 	"github.com/gunk/opt/openapiv2"
 	"github.com/kenshaw/snaker"
 )

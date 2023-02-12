@@ -17,8 +17,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gunk/gunk/assets"
-	"github.com/gunk/gunk/log"
+	"github.com/ErKiran/gunk/assets"
+	"github.com/ErKiran/gunk/log"
 	"golang.org/x/tools/go/packages"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/descriptorpb"

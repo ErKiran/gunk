@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gunk/gunk/loader"
+	"github.com/ErKiran/gunk/loader"
 )
 
 // pathToRoot returns the relative path to root from the provided path.

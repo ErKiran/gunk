@@ -22,7 +22,7 @@ message EventRequest {
 package util
 
 import (
-	imported "github.com/gunk/gunk/imported"
+	imported "github.com/ErKiran/gunk/imported"
 )
 
 type EventRequest_Nested struct {

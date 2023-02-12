@@ -5,7 +5,7 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/gunk/gunk/loader"
+	"github.com/ErKiran/gunk/loader"
 )
 
 // lintComment reports all comments that do not start with the name of the

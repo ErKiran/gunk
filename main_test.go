@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/gunk/gunk/generate"
+	"github.com/ErKiran/gunk/generate"
 	"github.com/rogpeppe/go-internal/gotooltest"
 	"github.com/rogpeppe/go-internal/testscript"
 )

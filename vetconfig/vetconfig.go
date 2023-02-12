@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gunk/gunk/config"
-	"github.com/gunk/gunk/generate/downloader"
+	"github.com/ErKiran/gunk/config"
+	"github.com/ErKiran/gunk/generate/downloader"
 )
 
 func Run(dir string) error {

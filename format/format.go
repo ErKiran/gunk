@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gunk/gunk/config"
-	"github.com/gunk/gunk/loader"
+	"github.com/ErKiran/gunk/config"
+	"github.com/ErKiran/gunk/loader"
 	"github.com/kenshaw/snaker"
 )
 

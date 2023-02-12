@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gunk/gunk/generate"
-	"github.com/gunk/gunk/protoutil"
+	"github.com/ErKiran/gunk/generate"
+	"github.com/ErKiran/gunk/protoutil"
 )
 
 // Run will generate the FileDescriptorSet for a Gunk package, and

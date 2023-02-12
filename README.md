@@ -1,7 +1,7 @@
 # Gunk [![GoDoc][godoc]][godoc-link]
 
-[godoc]: https://godoc.org/github.com/gunk/gunk?status.svg "GoDoc"
-[godoc-link]: https://godoc.org/github.com/gunk/gunk
+[godoc]: https://godoc.org/github.com/ErKiran/gunk?status.svg "GoDoc"
+[godoc-link]: https://godoc.org/github.com/ErKiran/gunk
 
 Gunk is a modern frontend and syntax for [Protocol Buffers][protobuf].
 
@@ -12,7 +12,7 @@ Gunk is a modern frontend and syntax for [Protocol Buffers][protobuf].
 [syntax]: #protocol-types-and-messages "Protocol Types and Messages Syntax"
 [configuring]: #project-configuration-files "Project Configuration Files"
 [about]: #about "About"
-[releases]: https://github.com/gunk/gunk/releases "Releases"
+[releases]: https://github.com/ErKiran/gunk/releases "Releases"
 
 ## Overview
 
@@ -139,7 +139,7 @@ scoop install gunk
 
 ```sh
 # install gunk
-$ go get -u github.com/gunk/gunk
+$ go get -u github.com/ErKiran/gunk
 ```
 
 ## Protobuf Dependency and Caching
@@ -657,7 +657,7 @@ appreciated! Get started with building and running `gunk`:
 
 ```sh
 # clone source repository
-$ git clone https://github.com/gunk/gunk.git && cd gunk
+$ git clone https://github.com/ErKiran/gunk.git && cd gunk
 
 # force GO111MODULES
 $ export GO111MODULE=on
@@ -681,7 +681,7 @@ $ cd gunk && go mod tidy
 [go-modules]: https://github.com/golang/go/wiki/Modules
 [go-project]: https://golang.org/project
 [gunk-options]: https://github.com/gunk/opt
-[gunk-example-server]: https://github.com/gunk/gunk-example-server
+[gunk-example-server]: https://github.com/ErKiran/gunk-example-server
 [gunk-tap]: https://github.com/gunk/homebrew-gunk
 [homebrew]: https://brew.sh/
 [protobuf]: https://developers.google.com/protocol-buffers/

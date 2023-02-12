@@ -22,7 +22,7 @@ message EventRequest {
 package util
 
 import (
-	imported "github.com/gunk/gunk/imported"
+	imported "github.com/ErKiran/gunk/imported"
 )
 
 type EventRequest_Nested struct {
@@ -39,7 +39,7 @@ syntax = "proto3";
 
 package imported;
 
-option go_package= "github.com/gunk/gunk/imported";
+option go_package= "github.com/ErKiran/gunk/imported";
 
 message Type {
 	string Name = 1;

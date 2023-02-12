@@ -5,7 +5,7 @@ import (
 	"go/types"
 	"strconv"
 
-	"github.com/gunk/gunk/loader"
+	"github.com/ErKiran/gunk/loader"
 )
 
 func lintUnimport(l *Linter, pkgs []*loader.GunkPackage) {

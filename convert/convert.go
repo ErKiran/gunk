@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gunk/gunk/config"
-	"github.com/gunk/gunk/format"
-	"github.com/gunk/gunk/generate/downloader"
-	"github.com/gunk/gunk/loader"
+	"github.com/ErKiran/gunk/config"
+	"github.com/ErKiran/gunk/format"
+	"github.com/ErKiran/gunk/generate/downloader"
+	"github.com/ErKiran/gunk/loader"
 )
 
 // Run converts proto files or folders to gunk files, saving the files in

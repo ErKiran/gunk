@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gunk/gunk/config"
-	"github.com/gunk/gunk/loader"
+	"github.com/ErKiran/gunk/config"
+	"github.com/ErKiran/gunk/loader"
 )
 
 type linter struct {
